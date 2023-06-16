@@ -1,0 +1,24 @@
+@import "daisyui/dist/full.css";
+.navbar {
+  background-color: #000000;
+  color: #ffffff;
+  z-index: 1;
+  ul li details {
+    &:focus{
+        color: #000;
+    }
+    summary:hover{
+        color:white;
+    }
+    summary + ul li a{
+      color: #570df8;
+      font-weight: 600;
+    }
+  }
+}
+
+.navbar-start a {
+  color: #fefefe;
+  margin-right: 1rem;
+  z-index: 1;
+}

@@ -1,0 +1,20 @@
+<div class="navbar ">
+  <div class="navbar-start">
+   
+    <a class="btn btn-ghost normal-case text-xl">Daisy</a>
+  </div>
+  <div class="navbar  lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a [routerLink]="['/']">Dashboard</a></li>
+      <li tabindex="0">
+        <details>
+          <summary>Movie By Year</summary>
+          <ul class="p-2 ">
+            <li *ngFor="let year of yearRange"><a  [queryParams]="{ timestamp: currentTime }" [routerLink]="['/dashboard', year]">{{ year }}</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+ 
+</div>
